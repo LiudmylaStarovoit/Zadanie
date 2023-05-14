@@ -1,0 +1,43 @@
+.nav {
+    width: 336px;
+    height: 29px;
+    column-gap: 10px;
+    margin-bottom: 20px;
+    &_title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #012748;
+        margin-bottom: 0;
+    }
+    &_divider {
+        width: 1px;
+        height: 26px;
+        border: 1px solid #D8D6DE;
+    }
+    &_wrapper {
+        width: 195px;
+        height: 21px;
+        column-gap: 10px;
+    }
+    &_home {
+        width: 14px;
+        height: 14px;
+    }
+    &_arrow {
+        width: 14px;
+        height: 14px;
+    }
+    &_start {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #05A8FF;
+    }
+    &_current {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #6B7B83;
+    }
+}

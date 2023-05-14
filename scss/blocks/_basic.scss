@@ -1,0 +1,15 @@
+.inform-basic {
+    height: 230.46px;
+    &_wrapper {
+        display: grid;
+        gap: 16px 31px;
+        grid-template:repeat(2, 68px) / repeat(3, 1fr);
+        grid-auto-rows: 68px;
+    }
+    &_items {
+        &:last-child {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+    }
+}

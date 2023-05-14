@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <title>Zadanie</title>
+</head>
+<body>
+    <div class="mask position-absolute d-none"></div>
+    <div class="modal position-fixed d-none">
+        <button class="modal-top-close position-absolute">
+            <img src="./icons/x-mark.svg" alt="x-mark">
+        </button>
+        <h2 class="modal-title">Importuj</h2>
+        <div class="modal-subtitle">Lista klientów</div>
+        <div class="modal-list">
+            <div class="modal-list-title d-flex align-items-center">
+                <div class="modal-list-title-id">ID</div>
+                <div class="modal-list-title-title2">Nagłówek nr 2</div>
+                <div class="modal-list-title-title3">Nagłówek nr 3</div>
+                <button class="modal-list-title-settings">
+                    <img src="./icons/settings.svg" alt="settings">
+                </button>
+            </div>
+            <div class="modal-list-item d-flex align-items-center border-bottom">
+                <a href="#" class="modal-list-item-id">Wybierz</a>
+                <div class="modal-list-item-title2">Klient nr 1</div>
+                <div class="modal-list-item-title3">Jan Kowalski</div>
+            </div>
+            <div class="modal-list-item d-flex align-items-center border-bottom">
+                <a href="#" class="modal-list-item-id">Wybierz</a>
+                <div class="modal-list-item-title2">Klient nr 1</div>
+                <div class="modal-list-item-title3">Jan Kowalski</div>
+            </div>
+            <div class="modal-list-item d-flex align-items-center border-bottom">
+                <a href="#" class="modal-list-item-id">Wybierz</a>
+                <div class="modal-list-item-title2">Klient nr 1</div>
+                <div class="modal-list-item-title3">Jan Kowalski</div>
+            </div>
+        </div>
+        <button class="modal-bottom-close">Zamknij</button>
+    </div>
+    <nav class="nav d-flex align-items-center">
+        <h1 class="nav_title">Ekran nr 1</h1>
+        <div class="nav_divider"></div>
+        <div class="d-flex align-items-center nav_wrapper">
+            <a href="#">
+                <img class="nav_home" src="./icons/home.svg" alt="home">
+            </a>
+            <img class="nav_arrow" src="./icons/arrow.svg" alt="arrow">
+            <a href="#" class="nav_start">Start</a>
+            <img class="nav_arrow" src="./icons/arrow.svg" alt="arrow">
+            <div class="nav_current">Ekran nr 1</div>
+        </div>
+    </nav>
+    <div class="col-md-12 inform-basic section">
+        <div class="d-flex justify-content-between">
+            <h2 class="section-title">Informacje podstawowe</h2>
+            <div>
+                <img class="section-arrow" src="./icons/arrow-down.svg" alt="arrow-down">
+            </div>
+        </div>
+        <div class="inform-basic_wrapper">
+            <div class="inform-basic_items">
+                <div class="section-subtitle">Tekst</div>
+                <input placeholder="Placeholder" type="text" class="section-input">
+            </div> 
+            <div class="inform-basic_items">
+                <div class="section-subtitle">Tekst<span> *</span></div>
+                <select class="form-select" aria-label="Default select example" required>
+                    <option selected>Placeholder</option>
+                    <option value="1">Placeholder</option>
+                    <option value="2">Placeholder</option>
+                    <option value="3">Placeholder</option>
+                </select>
+            </div>
+            <div class="inform-basic_items">
+                <div class="section-subtitle">Dropdown</div>
+                <div class="inform-basic_items-dropdown">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Placeholder</option>
+                        <option value="1">Placeholder</option>
+                        <option value="2">Placeholder</option>
+                        <option value="3">Placeholder</option>
+                    </select>
+                </div>   
+            </div>
+            <div class="inform-basic_items">
+                <div class="section-subtitle">Dropdown</div>
+                <div class="inform-basic_items-dropdown">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Placeholder</option>
+                        <option value="1">Placeholder</option>
+                        <option value="2">Placeholder</option>
+                        <option value="3">Placeholder</option>
+                    </select>
+                </div> 
+            </div>
+            <div class="inform-basic_items">
+                <div class="section-subtitle">Opis</div>
+                <input placeholder="Placeholder" type="text" disabled class="section-input disabled">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 inform-detailed section">
+        <div class="d-flex justify-content-between">
+            <h2 class="section-title">Informacje podstawowe</h2>
+            <div>
+                <img class="section-arrow" src="./icons/arrow-down.svg" alt="arrow-down">
+            </div>
+        </div>
+        <div class="d-flex inform-detailed_btns-wrapper">
+            <button class="inform-detailed_btn d-flex justify-content-center align-items-center inform-detailed_btn-import">
+                <span>Importuj</span>
+            </button>
+            <button class="inform-detailed_btn d-flex justify-content-center align-items-center">
+                <img src="./icons/refresh-ccw.svg" alt="refresh">
+                <span>Aktualizuj</span>
+            </button>
+            <button class="inform-detailed_btn d-flex justify-content-center align-items-center">
+                <img src="./icons/files.svg" alt="copy">
+                <span>Kopiuj</span>
+            </button>
+            <button class="inform-detailed_btn d-flex justify-content-center align-items-center">
+                <img src="./icons/file-x-2.svg" alt="clean">
+                <span>Wyczyść</span>
+            </button>
+        </div>
+        <div class="inform-detailed_wrapper">
+            <div class="inform-detailed_items">
+                <div class="section-subtitle">Tekst</div>
+                <input placeholder="Placeholder" type="text" class="section-input">
+            </div> 
+            <div class="inform-detailed_items">
+                <div class="section-subtitle">Dropdown</div>
+                <select class="form-select" aria-label="Default select example" required>
+                    <option selected>Placeholder</option>
+                    <option value="1">Placeholder</option>
+                    <option value="2">Placeholder</option>
+                    <option value="3">Placeholder</option>
+                </select> 
+            </div>
+            <div class="inform-detailed_items">
+                <div class="section-subtitle">Tekst</div>
+                <input placeholder="Placeholder" type="text" class="section-input">
+            </div> 
+            <div class="inform-detailed_items">
+                <div class="section-subtitle">Tekst</div>
+                <input placeholder="Placeholder" type="text" class="section-input">
+            </div> 
+            <div class="inform-detailed_items">
+                <div class="section-subtitle">Tekst</div>
+                <input placeholder="Placeholder" type="text" class="section-input">
+            </div>
+            <div class="inform-detailed_items">
+                <div class="section-subtitle">Tekst</div>
+                <input placeholder="Placeholder" type="text" class="section-input">
+            </div> 
+            <div class="inform-detailed_items">
+                <div class="section-subtitle">Tekst</div>
+                <input placeholder="Placeholder" type="text" class="section-input">
+            </div> 
+            <div class="inform-detailed_items">
+                <div class="section-subtitle">Tekst</div>
+                <input placeholder="Placeholder" type="text" class="section-input">
+            </div> 
+        </div>
+        <div class="d-flex flex-column inform-detailed_switches">
+            <div class="form-check form-switch">
+                <input class="form-check-input inform-detailed_switch-bg" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Switch 1</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input inform-detailed_switch-bg" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Switch 2</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input inform-detailed_switch-bg" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Switch 3</label>
+            </div>
+        </div>
+        <div class="inform-detailed_date">
+            <div class="inform-detailed_items">
+                <div class="section-subtitle">Data sprzedaży zgłoszona na PWI</div>
+                <input placeholder="Placeholder" type="text" class="section-input">
+            </div>
+        </div>
+        <div class="inform-detailed_list">
+            <h2 class="section-title">Lista</h2>
+            <div class="inform-detailed_list-wrapper">
+                <div class="inform-detailed_list-title d-flex align-items-center">
+                    <div class="inform-detailed_list-title-id">ID</div>
+                    <div class="inform-detailed_list-title-klient d-flex align-items-center justify-content-between">
+                       <span>KLIENT</span>
+                       <div class="d-flex align-items-center">
+                        <button class="d-flex flex-column inform-detailed_list-title-sort">
+                            <img src="./icons/chevron-up.svg" alt="chevron-up">
+                            <img src="./icons/chevron-down.svg" alt="chevron-down">
+                        </button>
+                        <div class="inform-detailed_list-title-divider"></div>
+                       </div>
+                    </div>
+                    <div class="inform-detailed_list-title-from d-flex align-items-center justify-content-between">
+                        <span>DATA OD</span>
+                        <div class="d-flex align-items-center">
+                            <button class="d-flex flex-column inform-detailed_list-title-sort">
+                                <img src="./icons/chevron-up.svg" alt="chevron-up">
+                                <img src="./icons/chevron-down.svg" alt="chevron-down">
+                            </button>
+                            <div class="inform-detailed_list-title-divider"></div>
+                        </div>
+                    </div>
+                    <div class="inform-detailed_list-title-to d-flex align-items-center justify-content-between">
+                        <span> DATA DO</span>
+                        <div class="d-flex align-items-center">
+                            <button class="d-flex flex-column inform-detailed_list-title-sort">
+                                <img src="./icons/chevron-up.svg" alt="chevron-up">
+                                <img src="./icons/chevron-down.svg" alt="chevron-down">
+                            </button>
+                            <div class="inform-detailed_list-title-divider"></div>
+                        </div>
+                    </div>
+                    <div class="inform-detailed_list-title-user">UŻYTKOWNIK</div>
+                    <div class="inform-detailed_list-title-stage">ETAP</div>
+                    <div class="inform-detailed_list-title-progress">POSTĘP</div>
+                    <div class="inform-detailed_list-title-error">BŁAD</div>
+                    <div class="inform-detailed_list-title-download"></div>
+                    <div class="inform-detailed_list-title-empty"></div>
+                </div>
+                <div class="inform-detailed_list-item d-flex align-items-center border-bottom">
+                    <div class="inform-detailed_list-item-group">
+                        <a href="#" class="inform-detailed_list-item-id">12</a>
+                        <div class="inform-detailed_list-item-klient">Klient nr 1</div>
+                    </div>
+                    <div class="inform-detailed_list-item-group">
+                        <div class="inform-detailed_list-item-from">05-09-2022 17:28</div>
+                        <div class="inform-detailed_list-item-to">05-09-2022 17:32</div>
+                    </div>
+                    <div class="inform-detailed_list-item-group">
+                        <div class="inform-detailed_list-item-user">Jan Kowalski</div>
+                        <div class="inform-detailed_list-item-stage">4/4</div>
+                    </div>
+                    <div class="inform-detailed_list-item-group">
+                        <div class="inform-detailed_list-item-progress">100%</div>
+                        <div class="inform-detailed_list-item-error">Nie</div>
+                    </div>
+                    <div class="inform-detailed_list-item-group">
+                        <button class="inform-detailed_list-item-download">
+                            <img src="./icons/log-in.svg" alt="log-in">
+                        </button>
+                        <a href="#" class="inform-detailed_list-item-empty">Pobierz</a>
+                    </div>
+                </div>
+                <div class="inform-detailed_list-item d-flex align-items-center border-bottom">
+                    <div class="inform-detailed_list-item-group">
+                        <a href="#" class="inform-detailed_list-item-id">123</a>
+                        <div class="inform-detailed_list-item-klient">Klient nr 4</div>
+                    </div>
+                    <div class="inform-detailed_list-item-group">
+                        <div class="inform-detailed_list-item-from">05-09-2022 17:28</div>
+                        <div class="inform-detailed_list-item-to">05-09-2022 17:32</div>
+                    </div>
+                    <div class="inform-detailed_list-item-group">
+                        <div class="inform-detailed_list-item-user">Krystian Nowak</div>
+                        <div class="inform-detailed_list-item-stage">3/3</div>
+                    </div>
+                    <div class="inform-detailed_list-item-group">
+                        <div class="inform-detailed_list-item-progress">100%</div>
+                        <div class="inform-detailed_list-item-error">Nie</div>
+                    </div>
+                    <div class="inform-detailed_list-item-group">
+                        <button class="inform-detailed_list-item-download">
+                            <img src="./icons/log-in.svg" alt="log-in">
+                        </button>
+                        <a href="#" class="inform-detailed_list-item-empty">Pobierz</a>
+                    </div>
+                </div>
+                <div class="inform-detailed_list-item d-flex align-items-center border-bottom">
+                    <div class="inform-detailed_list-item-group">
+                        <a href="#" class="inform-detailed_list-item-id">1234</a>
+                        <div class="inform-detailed_list-item-klient">Klient nr 3</div>
+                    </div>
+                    <div class="inform-detailed_list-item-group">
+                        <div class="inform-detailed_list-item-from">05-09-2022 17:28</div>
+                        <div class="inform-detailed_list-item-to">05-09-2022 17:32</div>
+                    </div>
+                    <div class="inform-detailed_list-item-group">
+                        <div class="inform-detailed_list-item-user">Administrator</div>
+                        <div class="inform-detailed_list-item-stage">4/4</div>
+                    </div>
+                    <div class="inform-detailed_list-item-group">
+                        <div class="inform-detailed_list-item-progress">100%</div>
+                        <div class="inform-detailed_list-item-error">Nie</div>
+                    </div>
+                    <div class="inform-detailed_list-item-group">
+                        <button class="inform-detailed_list-item-download">
+                            <img src="./icons/log-in.svg" alt="log-in">
+                        </button>
+                        <a href="#" class="inform-detailed_list-item-empty">Pobierz</a>
+                    </div>
+                </div>
+                <div class="inform-detailed_list-item d-flex align-items-center border-bottom">
+                    <div class="inform-detailed_list-item-group">
+                        <a href="#" class="inform-detailed_list-item-id">12345</a>
+                        <div class="inform-detailed_list-item-klient">Klient nr 4</div>
+                    </div>
+                    <div class="inform-detailed_list-item-group">
+                        <div class="inform-detailed_list-item-from">05-09-2022 17:28</div>
+                        <div class="inform-detailed_list-item-to">05-09-2022 17:32</div>
+                    </div>
+                    <div class="inform-detailed_list-item-group">
+                        <div class="inform-detailed_list-item-user">Katarzyna Kowalska</div>
+                        <div class="inform-detailed_list-item-stage">3/3</div>
+                    </div>
+                    <div class="inform-detailed_list-item-group">
+                        <div class="inform-detailed_list-item-progress">100%</div>
+                        <div class="inform-detailed_list-item-error">Nie</div>
+                    </div>
+                    <div class="inform-detailed_list-item-group">
+                        <button class="inform-detailed_list-item-download">
+                            <img src="./icons/log-in.svg" alt="log-in">
+                        </button>
+                        <a href="#" class="inform-detailed_list-item-empty">Pobierz</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+        <button class="main-btns-back d-flex justify-content-center align-items-center">
+            <img src="./icons/back.svg" alt="back">
+            <span>Wstecz</span>
+        </button>
+        <button class="main-btns-next d-flex justify-content-center align-items-center">
+            <span>Dalej</span>
+            <img src="./icons/next.svg" alt="next">
+        </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
